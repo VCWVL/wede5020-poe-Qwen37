@@ -1,7 +1,7 @@
 # Flour Crust Bakery Website - Part 3 Enhanced Edition
 
 **WEDE5020 Web Development - Part 3 Project**  
-**Student:** Lab Services Student  
+**Student:** st10493304  
 **Institution:** The Independent Institute of Education  
 **Date:** November 2025
 
