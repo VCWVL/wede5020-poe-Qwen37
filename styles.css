@@ -2656,3 +2656,7 @@ footer {
     }
 }
 /* Performance optimization: All animations use GPU acceleration */
+.interactive-map-demo { background: #f8f9fa; padding: 30px; border-radius: 15px; margin: 20px 0; } .map-header h3 { color: #8B4513; margin-bottom: 20px; } .map-controls { display: flex; gap: 15px; margin-bottom: 30px; justify-content: center; } .map-btn { background: #D2691E; color: white; border: none; padding: 12px 24px; border-radius: 8px; cursor: pointer; font-weight: 500; } .map-btn.active { background: #8B4513; } .location-info { display: block !important; opacity: 1 !important; background: white; padding: 20px; border-radius: 10px; margin: 10px 0; box-shadow: 0 4px 10px rgba(0,0,0,0.1); }
+
+/* Force locations to be visible */
+.location-info { display: block !important; opacity: 1 !important; background: white; padding: 20px; border-radius: 10px; margin: 10px 0; border: 2px solid #D2691E; }
