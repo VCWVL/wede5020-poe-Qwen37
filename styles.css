@@ -2655,3 +2655,4 @@ footer {
         padding: 0 20px;
     }
 }
+/* Performance optimization: All animations use GPU acceleration */
