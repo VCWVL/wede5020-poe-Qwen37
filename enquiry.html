@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enquiry Form - Custom Orders, Catering & Special Requests | Flour Crust</title>
+    <meta name="description" content="Submit an enquiry for custom cakes, catering services, wholesale orders, or special requests at Flour Crust Bakery. Professional service for events, weddings, and corporate needs.">
+    <meta name="keywords" content="bakery enquiry form, custom cake orders, catering services Cape Town, wedding cakes, corporate catering, wholesale bread orders, special requests">
+    <meta name="author" content="Flour Crust Bakery">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://flourcrustbakery.co.za/enquiry.html">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="modern-nav">
+        <nav>
+            <div class="logo">
+                <h1 class="gradient-text glow-text float-animation">Flour Crust</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html" class="nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="products.html" class="nav-item">Products</a></li>
+                <li><a href="enquiry.html" class="nav-item active">Enquiry</a></li>
+                <li><a href="contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="gradient-cool">
+        <section class="page-hero">
+            <div class="container">
+                <div class="hero-content fade-in-up">
+                    <h1 class="modern-heading glow-text">Make an Enquiry</h1>
+                    <p class="subheading">Have questions about our products or services? We'd love to hear from you!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-info-section">
+            <div class="container">
+                <div class="section-divider"></div>
+                <!-- Enhanced Enquiry Form -->
+                <div class="form-container">
+                    <h2 class="modern-heading gradient-text">Submit Your Enquiry</h2>
+                    <form id="enquiryForm" class="enquiry-form">
+                        <div class="form-grid">
+                            <div class="form-field">
+                                <label for="fullName">Full Name *</label>
+                                <input type="text" id="fullName" name="fullName" required aria-describedby="fullName-error">
+                            </div>
+                            
+                            <div class="form-field">
+                                <label for="emailAddress">Email Address *</label>
+                                <input type="email" id="emailAddress" name="emailAddress" required aria-describedby="emailAddress-error">
+                            </div>
+                            
+                            <div class="form-field">
+                                <label for="phoneNumber">Phone Number</label>
+                                <input type="tel" id="phoneNumber" name="phoneNumber" aria-describedby="phoneNumber-error">
+                            </div>
+                            
+                            <div class="form-field">
+                                <label for="enquiryType">Type of Enquiry *</label>
+                                <select id="enquiryType" name="enquiryType" required aria-describedby="enquiryType-error">
+                                    <option value="">Please select an enquiry type</option>
+                                    <option value="custom-cake">Custom Cake Orders</option>
+                                    <option value="wedding-cake">Wedding Cakes</option>
+                                    <option value="catering">Catering Services</option>
+                                    <option value="corporate">Corporate Orders</option>
+                                    <option value="wholesale">Wholesale Inquiries</option>
+                                    <option value="allergy">Allergy & Dietary Requirements</option>
+                                    <option value="franchise">Franchise Opportunities</option>
+                                    <option value="general">General Questions</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-field" style="grid-column: 1 / -1;">
+                                <label for="eventDate">Event/Required Date (if applicable)</label>
+                                <input type="date" id="eventDate" name="eventDate" min="2025-11-01" aria-describedby="eventDate-error">
+                            </div>
+                            
+                            <div class="form-field" style="grid-column: 1 / -1;">
+                                <label for="guestCount">Number of Guests/Servings (if applicable)</label>
+                                <input type="number" id="guestCount" name="guestCount" min="1" max="1000" placeholder="e.g., 50" aria-describedby="guestCount-error">
+                            </div>
+                            
+                            <div class="form-field" style="grid-column: 1 / -1;">
+                                <label for="budget">Estimated Budget Range (optional)</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-200">Under R200</option>
+                                    <option value="200-500">R200 - R500</option>
+                                    <option value="500-1000">R500 - R1,000</option>
+                                    <option value="1000-2500">R1,000 - R2,500</option>
+                                    <option value="2500-5000">R2,500 - R5,000</option>
+                                    <option value="over-5000">Over R5,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-field" style="grid-column: 1 / -1;">
+                                <label for="enquiryMessage">Detailed Requirements *</label>
+                                <textarea id="enquiryMessage" name="enquiryMessage" required minlength="20" 
+                                          placeholder="Please provide as much detail as possible about your requirements, including flavors, decorations, dietary restrictions, delivery details, etc." 
+                                          aria-describedby="enquiryMessage-error"></textarea>
+                            </div>
+                            
+                            <div class="form-field" style="grid-column: 1 / -1;">
+                                <label>
+                                    <input type="checkbox" name="priority" value="yes">
+                                    This is a priority/urgent enquiry (we'll respond within 4 hours during business hours)
+                                </label>
+                            </div>
+                            
+                            <div class="form-field" style="grid-column: 1 / -1;">
+                                <label>
+                                    <input type="checkbox" name="consultation" value="yes">
+                                    I would like to schedule a consultation to discuss my requirements in person
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div style="text-align: center; margin-top: 30px;">
+                            <button type="submit" class="btn-modern pulse-animation">Submit Enquiry</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Enquiry Types Information -->
+                <div class="enquiry-info modern-card glass-effect hover-scale fade-in-up">
+                    <h2 class="gradient-text">How We Can Help</h2>
+                    <div class="section-divider"></div>
+                    
+                    <div class="accordion-container">
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                🎂 Custom Cake Orders
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p>We create bespoke cakes for birthdays, anniversaries, and special celebrations. Our team can work with your design ideas or create something unique. Minimum 48 hours notice required.</p>
+                                    <p><strong>Lead Time:</strong> 2-7 days depending on complexity</p>
+                                    <p><strong>Starting Price:</strong> From R250</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                💒 Wedding & Event Cakes
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p>Make your special day even more memorable with our stunning wedding cakes. We offer tastings, custom designs, and delivery services for your big day.</p>
+                                    <p><strong>Lead Time:</strong> 2-4 weeks for wedding cakes</p>
+                                    <p><strong>Starting Price:</strong> From R800</p>
+                                    <p><strong>Includes:</strong> Design consultation, cake tasting, delivery & setup</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                🍽️ Catering Services
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p>From corporate meetings to family gatherings, we provide fresh bread platters, pastry selections, and custom menu options for your event.</p>
+                                    <p><strong>Lead Time:</strong> 24-48 hours</p>
+                                    <p><strong>Minimum Order:</strong> 10 people</p>
+                                    <p><strong>Delivery:</strong> Available within 10km radius</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <button class="accordion-header">
+                                🏢 Wholesale & Corporate
+                            </button>
+                            <div class="accordion-content">
+                                <div class="accordion-content-inner">
+                                    <p>Supply fresh bread and pastries to cafés, restaurants, and corporate clients. We offer competitive wholesale pricing and reliable daily delivery.</p>
+                                    <p><strong>Minimum Order:</strong> R500 per delivery</p>
+                                    <p><strong>Delivery:</strong> Daily schedules available</p>
+                                    <p><strong>Payment Terms:</strong> 30-day accounts for approved businesses</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-grid">
+
+                    <div class="contact-details modern-card glass-effect hover-scale fade-in-up">
+                        <h2 class="gradient-text">Contact Information</h2>
+                        <div class="section-divider"></div>
+                        <div class="contact-item">
+                            <h3 class="gradient-text">📞 Phone</h3>
+                            <p class="subheading"><a href="tel:+27211234567" class="gradient-text">021 123 4567</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3 class="gradient-text">✉️ Email</h3>
+                            <p class="subheading"><a href="mailto:ST10493304@vcconnect.edu.za" class="gradient-text">ST10493304@vcconnect.edu.za</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h3 class="gradient-text">📍 Address</h3>
+                            <p class="subheading">123 Bakery Lane<br>Cape Town, 8001</p>
+                        </div>
+                        
+                        <button class="btn-modern pulse-animation">Visit Our Store</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="modern-nav">
+        <div class="container">
+            <div class="footer-bottom">
+                <p class="gradient-text">&copy; 2025 Flour Crust Bakery - Baked with ❤️</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

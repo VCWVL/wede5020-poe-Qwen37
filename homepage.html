@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<!-- 
+    FLOUR CRUST BAKERY - HOME PAGE
+    WEDE5020 Part 3 Project by Lab Services Student
+    
+    Built following best practices from:
+    - W3C standards (because valid HTML matters)
+    - Google's SEO guide (gotta get found on Google)
+    - Open Graph stuff (so it looks good when shared on social media)
+    - Accessibility guidelines (everyone should be able to use this site)
+    
+    November 2025 - IIE Student Project
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flour Crust Bakery - Artisan Breads & Pastries | Cape Town's Best Bakery</title>
+    <meta name="description" content="Flour Crust Bakery offers artisan breads, fresh pastries, and specialty baked goods in Cape Town. Experience our 24-hour fermented sourdough and French pastries. Visit us today!">
+    <meta name="keywords" content="bakery Cape Town, artisan bread, sourdough, French pastries, fresh bread, croissants, vanilla slice, custom cakes, organic flour">
+    <meta name="author" content="Flour Crust Bakery">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Flour Crust Bakery - Cape Town's Premier Artisan Bakery">
+    <meta property="og:description" content="Discover handcrafted breads and pastries made with love. Our 24-hour fermented sourdough and French techniques create exceptional baked goods daily.">
+    <meta property="og:image" content="images/bakery-hero.jpg">
+    <meta property="og:url" content="https://flourcrustbakery.co.za">
+    <link rel="canonical" href="https://flourcrustbakery.co.za/homepage.html">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="modern-nav">
+        <nav>
+            <div class="logo">
+                <h1 class="gradient-text glow-text float-animation">Flour Crust</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="homepage.html" class="active nav-item">Home</a></li>
+                <li><a href="about.html" class="nav-item">About</a></li>
+                <li><a href="products.html" class="nav-item">Products</a></li>
+                <li><a href="enquiry.html" class="nav-item">Enquiry</a></li>
+                <li><a href="contact.html" class="nav-item">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero gradient-sunset parallax-bg">
+            <div class="hero-content fade-in-up">
+                <h2 class="modern-heading glow-text">Welcome to Flour Crust</h2>
+                <p class="subheading">Your premier destination for artisan breads, pastries, and specialty baked goods.</p>
+                <div class="hero-buttons">
+                    <a href="products.html" class="btn-modern pulse-animation">View Our Products</a>
+                    <a href="about.html" class="btn-modern">Learn About Us</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <div class="container">
+                <h2 class="modern-heading gradient-text">Featured Items</h2>
+                <div class="section-divider"></div>
+                <div class="featured-grid">
+                    <div class="featured-item modern-card hover-scale fade-in-up">
+                        <img src="images/sourdough loaves.jpg.png" alt="Artisan sourdough bread with crispy crust and perfect crumb structure" class="rotate-on-hover gallery-image" data-lightbox="gallery" data-caption="Our signature 24-hour fermented sourdough bread">
+                        <div class="featured-content">
+                            <h3 class="gradient-text">Artisan Sourdough</h3>
+                            <p>Our signature sourdough bread, fermented for 24 hours for the perfect tang and texture. Made with organic stone-ground flour and our 5-year-old starter "Lucy".</p>
+                            <button class="btn-modern" data-modal="product-details">Learn More</button>
+                        </div>
+                    </div>
+                    <div class="featured-item modern-card hover-scale fade-in-up">
+                        <img src="images/layered puff pastry.png.png" alt="Fresh golden croissants with flaky layers and buttery texture" class="rotate-on-hover gallery-image" data-lightbox="gallery" data-caption="Traditional French croissants made with premium butter" style="border-radius: 12px; object-fit: cover; width: 100%; height: 200px;">
+                        <div class="featured-content">
+                            <h3 class="gradient-text">Fresh Buttery Croissants</h3>
+                            <p>Golden, flaky croissants made with premium French butter and traditional lamination techniques. Baked fresh every morning at 5 AM.</p>
+                            <a href="products.html#croissants" class="btn-modern">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us gradient-cool">
+            <div class="container">
+                <h2 class="modern-heading glow-text">Why Choose Flour Crust?</h2>
+                <div class="section-divider"></div>
+                <div class="reasons-grid">
+                    <div class="reason modern-card glass-effect hover-scale fade-in-up">
+                        <div class="reason-icon pulse-animation">🌾</div>
+                        <h3 class="gradient-text">Premium Ingredients</h3>
+                        <p>We source only the finest organic flours and natural ingredients for our baked goods.</p>
+                    </div>
+                    <div class="reason modern-card glass-effect hover-scale fade-in-up">
+                        <div class="reason-icon pulse-animation">👨‍🍳</div>
+                        <h3 class="gradient-text">Master Bakers</h3>
+                        <p>Our experienced bakers bring decades of traditional and modern baking expertise.</p>
+                    </div>
+                    <div class="reason modern-card glass-effect hover-scale fade-in-up">
+                        <div class="reason-icon pulse-animation">🕐</div>
+                        <h3 class="gradient-text">Fresh Daily</h3>
+                        <p>Everything is baked fresh every morning using time-tested recipes and techniques.</p>
+                    </div>
+                    <div class="reason">
+                        <div class="reason-icon">🏪</div>
+                        <h3>Community Focus</h3>
+                        <p>Proudly serving our local community for over 20 years with exceptional service.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Content Section -->
+        <section class="dynamic-content">
+            <div class="container">
+                <h2 class="modern-heading gradient-text">Latest from Our Kitchen</h2>
+                <div class="section-divider"></div>
+                <div data-dynamic-load="recent-posts" class="animate-ready"></div>
+            </div>
+        </section>
+
+        <!-- Interactive FAQ Accordion -->
+        <section class="faq-section">
+            <div class="container">
+                <h2 class="modern-heading gradient-text">Frequently Asked Questions</h2>
+                <div class="section-divider"></div>
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            What time do you start baking fresh bread?
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>We start our baking process at 3:00 AM every morning to ensure our breads are fresh and warm when we open at 7:00 AM. Our sourdough undergoes a 24-hour fermentation process, so we're always working ahead to maintain our quality standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Do you offer gluten-free options?
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Yes! We have a dedicated gluten-free section with breads, muffins, and pastries. While we take precautions to prevent cross-contamination, please note that we do work with wheat flour in the same facility.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            Can I place custom orders for special events?
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Absolutely! We specialize in custom cakes, bread platters, and catering for events. Please contact us at least 48 hours in advance for regular orders, or 1 week for elaborate custom cakes. Call us at (021) 555-0123 to discuss your needs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            What makes your sourdough special?
+                        </button>
+                        <div class="accordion-content">
+                            <div class="accordion-content-inner">
+                                <p>Our sourdough starter "Lucy" is 5 years old and creates the perfect balance of tang and texture. We use organic stone-ground flour and traditional fermentation methods that make our bread more digestible and flavorful than commercial alternatives.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials">
+            <div class="container">
+                <h2 class="modern-heading gradient-text">What Our Customers Say</h2>
+                <div class="section-divider"></div>
+                <div class="testimonials-grid">
+                    <div class="testimonial modern-card hover-scale fade-in-up">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <blockquote>
+                            "The best sourdough in Cape Town! I've been coming here for years and the quality never disappoints. The staff knows my order by heart!"
+                        </blockquote>
+                        <cite>- Sarah M.</cite>
+                    </div>
+                    <div class="testimonial modern-card hover-scale fade-in-up">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <blockquote>
+                            "Their croissants are absolutely divine. You can taste the premium butter in every flaky layer. Worth the early morning queue!"
+                        </blockquote>
+                        <cite>- Michael R.</cite>
+                    </div>
+                    <div class="testimonial modern-card hover-scale fade-in-up">
+                        <div class="testimonial-rating">⭐⭐⭐⭐⭐</div>
+                        <blockquote>
+                            "Flour Crust made our wedding cake dreams come true. Beautiful, delicious, and the team was so accommodating. Highly recommend!"
+                        </blockquote>
+                        <cite>- Jennifer & David L.</cite>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Interactive Map Section -->
+        <section class="location-section">
+            <div class="container">
+                <h2 class="modern-heading gradient-text">Visit Our Locations</h2>
+                <div class="section-divider"></div>
+                <div id="bakery-map" class="animate-ready"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Flour Crust Bakery</h3>
+                    <p>Crafting exceptional baked goods since 2005</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="homepage.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>123 Baker Street<br>Cape Town, 8001<br>(021) 555-0123</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Flour Crust Bakery. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
